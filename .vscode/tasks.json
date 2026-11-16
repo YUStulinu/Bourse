@@ -1,0 +1,13 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    { "label": "engine: build", "type": "shell", "command": "cmake -S engine -B engine/build -G Ninja && cmake --build engine/build", "group": "build" },
+    { "label": "engine: tests", "type": "shell", "command": "engine/build/engine-tests", "group": "test" },
+    { "label": "gateway: build and test", "type": "shell", "command": "cd gateway && cargo test --release && cargo build --release", "group": "test" },
+    { "label": "marketdata: build and test", "type": "shell", "command": "cd marketdata && go test ./... && go build -o bin/ ./cmd/...", "group": "test" },
+    { "label": "risk: build and test", "type": "shell", "command": "cd risk && ./gradlew test jar", "group": "test" },
+    { "label": "sim: tests", "type": "shell", "command": ".venv/Scripts/python -m pytest sim/tests -q", "group": "test" },
+    { "label": "ui: build and test", "type": "shell", "command": "cd ui && npm test", "group": "test" },
+    { "label": "exchange: run (open http://127.0.0.1:8080)", "type": "shell", "command": ".venv/Scripts/python tools/exchange.py run", "problemMatcher": [] }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "ouch": [
+    {
+      "user": "ALICE",
+      "password": "alice",
+      "account": 1
+    },
+    {
+      "user": "BOB",
+      "password": "bob",
+      "account": 2
+    },
+    {
+      "user": "CAROL",
+      "password": "carol",
+      "account": 3
+    },
+    {
+      "user": "DAVE",
+      "password": "dave",
+      "account": 4
+    },
+    {
+      "user": "MM1",
+      "password": "mm1",
+      "account": 11
+    },
+    {
+      "user": "MM2",
+      "password": "mm2",
+      "account": 12
+    },
+    {
+      "user": "SIM",
+      "password": "sim",
+      "account": 20
+    },
+    {
+      "user": "INST",
+      "password": "inst",
+      "account": 21
+    },
+    {
+      "user": "FUND",
+      "password": "fund",
+      "account": 22
+    },
+    {
+      "user": "CHART",
+      "password": "chart",
+      "account": 23
+    },
+    {
+      "user": "LEARN",
+      "password": "learn",
+      "account": 13
+    }
+  ],
+  "fix": [
+    {
+      "sender": "CLIENT1",
+      "account": 5
+    },
+    {
+      "sender": "CLIENT2",
+      "account": 6
+    },
+    {
+      "sender": "CLIENT3",
+      "account": 7
+    },
+    {
+      "sender": "CLIENT4",
+      "account": 8
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+simulated 600 s: 121773 commands, 7892 trades
+{
+ "seconds": 600.0,
+ "commands": 121773,
+ "sim_trades": 7892,
+ "replay_seconds": 12.654815912246704,
+ "commands_per_second": 9622.660720189073,
+ "exchange_trades": 7892,
+ "trades_identical": true,
+ "market_data_book_identical": true,
+ "market_data_unknown_refs": 0,
+ "market_data_crossed": 0,
+ "clearing_positions_identical": true,
+ "settlement_balanced": true,
+ "clearing_trades": 7892
+}

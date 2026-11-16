@@ -1,0 +1,10 @@
+{
+  "cmake.sourceDirectory": "${workspaceFolder}/engine",
+  "cmake.buildDirectory": "${workspaceFolder}/engine/build",
+  "cmake.generator": "Ninja",
+  "rust-analyzer.linkedProjects": ["gateway/Cargo.toml"],
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+  "python.testing.pytestEnabled": true,
+  "python.testing.pytestArgs": ["sim/tests"],
+  "files.exclude": { "**/target": true, "**/build": true, "**/node_modules": true }
+}

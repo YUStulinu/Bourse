@@ -1,0 +1,87 @@
+AAPL 8 of 8
+MSFT 8 of 8
+AMD 8 of 8
+INTC 8 of 8
+QQQ 8 of 8
+simulated, rule-based makers day 0 8 of 8
+simulated, rule-based makers day 1 8 of 8
+simulated, rule-based makers day 2 8 of 8
+simulated, rule-based makers day 3 8 of 8
+C:\VSCode\ProiecteVSCode\Bourse\eval\realism.py:110: RuntimeWarning: Mean of empty slice
+  mean = {k: float(np.nanmean([f.get(k, np.nan) if f.get(k) is not None else np.nan for f in fs])) for k in keys}
+simulated, with the learned maker day 0 8 of 8
+simulated, with the learned maker day 1 8 of 8
+simulated, with the learned maker day 2 8 of 8
+simulated, with the learned maker day 3 8 of 8
+{
+ "AAPL": {
+  "heavy tails (10 s kurtosis > 1)": true,
+  "no return autocorrelation (|acf| < 0.1)": true,
+  "volatility clustering (|r| acf > 0.05)": true,
+  "long memory of trade signs (exponent < 1)": true,
+  "tight spread (mostly <= 2 ticks)": true,
+  "positive, concave impact (exponent < 1)": true,
+  "bursty trading (inter-arrival CV > 1)": true,
+  "fat-tailed order placement (tail exponent < 3)": true
+ },
+ "MSFT": {
+  "heavy tails (10 s kurtosis > 1)": true,
+  "no return autocorrelation (|acf| < 0.1)": true,
+  "volatility clustering (|r| acf > 0.05)": true,
+  "long memory of trade signs (exponent < 1)": true,
+  "tight spread (mostly <= 2 ticks)": true,
+  "positive, concave impact (exponent < 1)": true,
+  "bursty trading (inter-arrival CV > 1)": true,
+  "fat-tailed order placement (tail exponent < 3)": true
+ },
+ "AMD": {
+  "heavy tails (10 s kurtosis > 1)": true,
+  "no return autocorrelation (|acf| < 0.1)": true,
+  "volatility clustering (|r| acf > 0.05)": true,
+  "long memory of trade signs (exponent < 1)": true,
+  "tight spread (mostly <= 2 ticks)": true,
+  "positive, concave impact (exponent < 1)": true,
+  "bursty trading (inter-arrival CV > 1)": true,
+  "fat-tailed order placement (tail exponent < 3)": true
+ },
+ "INTC": {
+  "heavy tails (10 s kurtosis > 1)": true,
+  "no return autocorrelation (|acf| < 0.1)": true,
+  "volatility clustering (|r| acf > 0.05)": true,
+  "long memory of trade signs (exponent < 1)": true,
+  "tight spread (mostly <= 2 ticks)": true,
+  "positive, concave impact (exponent < 1)": true,
+  "bursty trading (inter-arrival CV > 1)": true,
+  "fat-tailed order placement (tail exponent < 3)": true
+ },
+ "QQQ": {
+  "heavy tails (10 s kurtosis > 1)": true,
+  "no return autocorrelation (|acf| < 0.1)": true,
+  "volatility clustering (|r| acf > 0.05)": true,
+  "long memory of trade signs (exponent < 1)": true,
+  "tight spread (mostly <= 2 ticks)": true,
+  "positive, concave impact (exponent < 1)": true,
+  "bursty trading (inter-arrival CV > 1)": true,
+  "fat-tailed order placement (tail exponent < 3)": true
+ },
+ "simulated, rule-based makers": {
+  "heavy tails (10 s kurtosis > 1)": true,
+  "no return autocorrelation (|acf| < 0.1)": true,
+  "volatility clustering (|r| acf > 0.05)": true,
+  "long memory of trade signs (exponent < 1)": true,
+  "tight spread (mostly <= 2 ticks)": true,
+  "positive, concave impact (exponent < 1)": true,
+  "bursty trading (inter-arrival CV > 1)": true,
+  "fat-tailed order placement (tail exponent < 3)": true
+ },
+ "simulated, with the learned maker": {
+  "heavy tails (10 s kurtosis > 1)": true,
+  "no return autocorrelation (|acf| < 0.1)": true,
+  "volatility clustering (|r| acf > 0.05)": true,
+  "long memory of trade signs (exponent < 1)": true,
+  "tight spread (mostly <= 2 ticks)": true,
+  "positive, concave impact (exponent < 1)": true,
+  "bursty trading (inter-arrival CV > 1)": true,
+  "fat-tailed order placement (tail exponent < 3)": true
+ }
+}

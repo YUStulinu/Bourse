@@ -1,0 +1,16 @@
+# builds
+engine/build/
+gateway/target/
+marketdata/bin/
+risk/build/
+risk/.gradle/
+ui/node_modules/
+ui/dist/
+__pycache__/
+.venv/
+.pytest_cache/
+# data and runs
+data/itch/
+data/derived/
+run/
+build_itch.log

@@ -1,0 +1,378 @@
+{
+ "platform": "Windows-11-10.0.26300-SP0",
+ "processor": "Intel64 Family 6 Model 165 Stepping 2, GenuineIntel",
+ "cpus": 16,
+ "engine": {
+  "commands": 4000000,
+  "new": 2600571,
+  "cancel": 1199267,
+  "replace": 200162,
+  "events": 7117288,
+  "executions": 949961,
+  "in_process": {
+   "commands_per_second": 12052651,
+   "latency_ns": {
+    "p50": 94,
+    "p90": 127,
+    "p99": 357,
+    "p99_9": 496,
+    "p99_99": 1276,
+    "max": 94997,
+    "mean": 96.4
+   }
+  },
+  "bus": [
+   {
+    "rate": 100000,
+    "achieved_per_second": 100000,
+    "latency_ns": {
+     "p50": 440,
+     "p90": 630,
+     "p99": 19165,
+     "p99_9": 640905,
+     "p99_99": 6520403,
+     "max": 8766326,
+     "mean": 4222.1
+    }
+   },
+   {
+    "rate": 1000000,
+    "achieved_per_second": 1000000,
+    "latency_ns": {
+     "p50": 372,
+     "p90": 506,
+     "p99": 18330,
+     "p99_9": 76922,
+     "p99_99": 2171606,
+     "max": 2487455,
+     "mean": 1903.2
+    }
+   },
+   {
+    "rate": 2000000,
+    "achieved_per_second": 2000000,
+    "latency_ns": {
+     "p50": 359,
+     "p90": 516,
+     "p99": 22229,
+     "p99_9": 1380850,
+     "p99_99": 2653636,
+     "max": 2771057,
+     "mean": 3915.6
+    }
+   },
+   {
+    "rate": 4000000,
+    "achieved_per_second": 3999999,
+    "latency_ns": {
+     "p50": 379,
+     "p90": 15473,
+     "p99": 235256,
+     "p99_9": 2017884,
+     "p99_99": 2328177,
+     "max": 2346010,
+     "mean": 15628.3
+    }
+   },
+   {
+    "rate": 0,
+    "achieved_per_second": 6540826,
+    "latency_ns": {
+     "p50": 5314440,
+     "p90": 9019660,
+     "p99": 10573995,
+     "p99_9": 11614317,
+     "p99_99": 12140834,
+     "max": 12199699,
+     "mean": 5345453.5
+    }
+   }
+  ]
+ },
+ "tcp_baseline": {
+  "tcp_loopback_rtt_us": {
+   "p50": 45.9,
+   "p90": 51.0,
+   "p99": 114.7,
+   "p99_9": 170.9,
+   "max": 1123.5
+  },
+  "bytes": 49
+ },
+ "order_entry": [
+  {
+   "protocol": "ouch",
+   "sessions": 4,
+   "rate": 1000,
+   "requests": 20000,
+   "new_orders_acknowledged": 10400,
+   "rejected": 0,
+   "executions": 2266,
+   "sender_max_behind_us": 30.1,
+   "latency_us": {
+    "p50": 108.8,
+    "p90": 170.3,
+    "p99": 237.5,
+    "p99_9": 304.0,
+    "p99_99": 346.7,
+    "max": 349.2
+   },
+   "gateway_internal_us": {
+    "p50": 88.8,
+    "p90": 128.8,
+    "p99": 184.3,
+    "p99_9": 247.1,
+    "p99_99": 277.7,
+    "max": 278.8
+   }
+  },
+  {
+   "protocol": "ouch",
+   "sessions": 4,
+   "rate": 10000,
+   "requests": 200000,
+   "new_orders_acknowledged": 100400,
+   "rejected": 0,
+   "executions": 22368,
+   "sender_max_behind_us": 309.1,
+   "latency_us": {
+    "p50": 91.0,
+    "p90": 148.9,
+    "p99": 202.7,
+    "p99_9": 269.3,
+    "p99_99": 436.4,
+    "max": 1061.9
+   },
+   "gateway_internal_us": {
+    "p50": 80.3,
+    "p90": 116.2,
+    "p99": 163.9,
+    "p99_9": 218.5,
+    "p99_99": 316.2,
+    "max": 1023.1
+   }
+  },
+  {
+   "protocol": "ouch",
+   "sessions": 4,
+   "rate": 50000,
+   "requests": 1000000,
+   "new_orders_acknowledged": 500400,
+   "rejected": 0,
+   "executions": 112238,
+   "sender_max_behind_us": 19187.5,
+   "latency_us": {
+    "p50": 157.2,
+    "p90": 254.6,
+    "p99": 373.2,
+    "p99_9": 51715.4,
+    "p99_99": 69676.4,
+    "max": 71676.4
+   },
+   "gateway_internal_us": {
+    "p50": 114.3,
+    "p90": 200.1,
+    "p99": 325.4,
+    "p99_9": 51730.2,
+    "p99_99": 54848.7,
+    "max": 54848.7
+   }
+  },
+  {
+   "protocol": "ouch",
+   "sessions": 4,
+   "rate": 100000,
+   "requests": 2000000,
+   "new_orders_acknowledged": 1000396,
+   "rejected": 0,
+   "executions": 225149,
+   "sender_max_behind_us": 2009.6,
+   "latency_us": {
+    "p50": 182.1,
+    "p90": 299.3,
+    "p99": 415.7,
+    "p99_9": 970.0,
+    "p99_99": 4827.1,
+    "max": 6616.1
+   },
+   "gateway_internal_us": {
+    "p50": 134.9,
+    "p90": 208.2,
+    "p99": 360.5,
+    "p99_9": 521.7,
+    "p99_99": 1678.7,
+    "max": 5768.0
+   }
+  },
+  {
+   "protocol": "fix",
+   "sessions": 4,
+   "rate": 1000,
+   "requests": 20000,
+   "new_orders_acknowledged": 10400,
+   "rejected": 0,
+   "executions": 2266,
+   "sender_max_behind_us": 47.2,
+   "latency_us": {
+    "p50": 139.9,
+    "p90": 201.9,
+    "p99": 283.7,
+    "p99_9": 349.3,
+    "p99_99": 425.3,
+    "max": 441.6
+   },
+   "gateway_internal_us": {
+    "p50": 109.6,
+    "p90": 167.1,
+    "p99": 238.5,
+    "p99_9": 313.9,
+    "p99_99": 417.2,
+    "max": 426.1
+   }
+  },
+  {
+   "protocol": "fix",
+   "sessions": 4,
+   "rate": 10000,
+   "requests": 200000,
+   "new_orders_acknowledged": 100400,
+   "rejected": 0,
+   "executions": 22380,
+   "sender_max_behind_us": 236.1,
+   "latency_us": {
+    "p50": 121.4,
+    "p90": 181.2,
+    "p99": 257.0,
+    "p99_9": 353.2,
+    "p99_99": 1553.5,
+    "max": 3600.4
+   },
+   "gateway_internal_us": {
+    "p50": 94.9,
+    "p90": 147.2,
+    "p99": 215.3,
+    "p99_9": 297.7,
+    "p99_99": 400.3,
+    "max": 853.6
+   }
+  },
+  {
+   "protocol": "fix",
+   "sessions": 4,
+   "rate": 50000,
+   "requests": 1000000,
+   "new_orders_acknowledged": 500400,
+   "rejected": 0,
+   "executions": 112322,
+   "sender_max_behind_us": 272.1,
+   "latency_us": {
+    "p50": 308.0,
+    "p90": 628.5,
+    "p99": 915.1,
+    "p99_9": 1391.2,
+    "p99_99": 2960.3,
+    "max": 4150.8
+   },
+   "gateway_internal_us": {
+    "p50": 215.1,
+    "p90": 394.5,
+    "p99": 556.1,
+    "p99_9": 824.2,
+    "p99_99": 1682.2,
+    "max": 2894.7
+   }
+  }
+ ],
+ "market_data": [
+  {
+   "drop": 0,
+   "duplicates": 0,
+   "gaps": 0,
+   "latency_us": {
+    "max": 4937,
+    "p50": 109.3,
+    "p99": 339.3,
+    "p99_9": 1169.8
+   },
+   "messages_per_second_all_subscribers": 16166.15,
+   "messages_received": 323323,
+   "recovered": 0,
+   "seconds": 20,
+   "still_missing": 0,
+   "subscribers": 1,
+   "order_rate": 20000
+  },
+  {
+   "drop": 0,
+   "duplicates": 30,
+   "gaps": 10,
+   "latency_us": {
+    "max": 6185.9,
+    "p50": 384.7,
+    "p99": 803.8,
+    "p99_9": 4176.3
+   },
+   "messages_per_second_all_subscribers": 161663.5,
+   "messages_received": 3233270,
+   "recovered": 30,
+   "seconds": 20,
+   "still_missing": 0,
+   "subscribers": 10,
+   "order_rate": 20000
+  },
+  {
+   "drop": 0,
+   "duplicates": 0,
+   "gaps": 0,
+   "latency_us": {
+    "max": 14021.6,
+    "p50": 1625,
+    "p99": 4386.2,
+    "p99_9": 7571.8
+   },
+   "messages_per_second_all_subscribers": 808322.5,
+   "messages_received": 16166450,
+   "recovered": 0,
+   "seconds": 20,
+   "still_missing": 0,
+   "subscribers": 50,
+   "order_rate": 20000
+  },
+  {
+   "drop": 0,
+   "duplicates": 4652,
+   "gaps": 1367,
+   "latency_us": {
+    "max": 2821402.6,
+    "p50": 1656079,
+    "p99": 2811474.2,
+    "p99_9": 2815559
+   },
+   "messages_per_second_all_subscribers": 1525398.7,
+   "messages_received": 30507974,
+   "recovered": 4725,
+   "seconds": 20,
+   "still_missing": 0,
+   "subscribers": 100,
+   "order_rate": 20000
+  },
+  {
+   "drop": 0.01,
+   "duplicates": 36,
+   "gaps": 5442,
+   "latency_us": {
+    "max": 5962,
+    "p50": 443.1,
+    "p99": 856.3,
+    "p99_9": 3101.3
+   },
+   "messages_per_second_all_subscribers": 160094.2,
+   "messages_received": 3201884,
+   "recovered": 31606,
+   "seconds": 20,
+   "still_missing": 0,
+   "subscribers": 10,
+   "order_rate": 20000
+  }
+ ]
+}

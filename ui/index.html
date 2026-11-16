@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bourse order book</title>
+<style>
+  :root {
+    --bg: #f7f7f5; --panel: #ffffff; --text: #1d1d1f; --muted: #6e6e73; --line: #e3e3e0; --grid: #ececea;
+    --bid: #1a7f4b; --bid-bg: #e3f3ea; --ask: #b3261e; --ask-bg: #fbe7e5; --accent: #2457c5; --sel: #eef2fb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141416; --panel: #1c1c1f; --text: #ececee; --muted: #9a9aa2; --line: #2c2c31; --grid: #26262b;
+      --bid: #4fc184; --bid-bg: #16301f; --ask: #f2726a; --ask-bg: #3a1a18; --accent: #7aa2ff; --sel: #222a3d;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 13px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  header { display: flex; align-items: baseline; gap: 16px; padding: 12px 16px; border-bottom: 1px solid var(--line); background: var(--panel); }
+  header h1 { margin: 0; font-size: 16px; font-weight: 600; }
+  .status { font-size: 12px; }
+  .status.ok { color: var(--bid); } .status.bad { color: var(--ask); }
+  main { display: grid; grid-template-columns: 260px 1fr 280px; gap: 12px; padding: 12px 16px; }
+  section { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 10px; min-width: 0; }
+  h2 { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin: 0 0 8px; font-weight: 600; }
+  table { width: 100%; border-collapse: collapse; }
+  td, th { padding: 2px 6px; white-space: nowrap; }
+  th { text-align: left; color: var(--muted); font-weight: 500; font-size: 11px; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; }
+  #symbols tr { cursor: pointer; } #symbols tr:hover, #symbols tr.sel { background: var(--sel); }
+  .ladder td.bar { width: 40%; position: relative; padding: 0; }
+  .ladder td.bar span { position: absolute; right: 0; top: 2px; bottom: 2px; border-radius: 2px; }
+  tr.bid td.bar span { background: var(--bid-bg); } tr.ask td.bar span { background: var(--ask-bg); }
+  tr.bid .price { color: var(--bid); font-weight: 600; } tr.ask .price { color: var(--ask); font-weight: 600; }
+  .midline { text-align: center; padding: 6px; color: var(--muted); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin: 4px 0; }
+  #chart { width: 100%; height: 220px; display: block; }
+  tr.up td:nth-child(2) { color: var(--bid); } tr.down td:nth-child(2) { color: var(--ask); }
+  #accounts tr.blocked { color: var(--ask); }
+  .small { color: var(--muted); font-size: 12px; }
+  .center { display: grid; gap: 12px; align-content: start; }
+  @media (max-width: 900px) { main { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Bourse</h1>
+  <span id="title"></span>
+  <span id="stats" class="small"></span>
+  <span id="status" class="status bad">connecting</span>
+</header>
+<main>
+  <section>
+    <h2>Symbols</h2>
+    <table><thead><tr><th>Stock</th><th class="num">Bid</th><th class="num">Ask</th><th class="num">Last</th><th class="num">Volume</th></tr></thead><tbody id="symbols"></tbody></table>
+  </section>
+  <div class="center">
+    <section>
+      <h2>Order book</h2>
+      <table class="ladder"><thead><tr><th>Depth</th><th class="num">Orders</th><th class="num">Shares</th><th class="num">Price</th></tr></thead><tbody id="asks"></tbody></table>
+      <div class="midline"><span id="mid"></span> · <span id="imb"></span></div>
+      <table class="ladder"><tbody id="bids"></tbody></table>
+    </section>
+    <section>
+      <h2>Mid price</h2>
+      <canvas id="chart"></canvas>
+    </section>
+    <section>
+      <h2>Accounts (risk and clearing)</h2>
+      <div id="risk-status" class="small"></div>
+      <table><thead><tr><th>Account</th><th class="num">Equity $</th><th class="num">Margin $</th><th class="num">P&amp;L $</th><th>Positions</th><th></th></tr></thead><tbody id="accounts"></tbody></table>
+    </section>
+  </div>
+  <section>
+    <h2>Tape</h2>
+    <table><thead><tr><th>Time (UTC)</th><th class="num">Price</th><th class="num">Shares</th></tr></thead><tbody id="tape"></tbody></table>
+  </section>
+</main>
+<script type="module" src="dist/main.js?v=3"></script>
+</body>
+</html>

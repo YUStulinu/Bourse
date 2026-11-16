@@ -1,0 +1,14 @@
+{
+  "name": "bourse-ui",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Live order book of the Bourse exchange",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "tsc -p . && node --test test/"
+  },
+  "devDependencies": {
+    "typescript": "5.6.3"
+  }
+}

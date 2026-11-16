@@ -1,0 +1,14 @@
+{
+ "book_checks": 186676286,
+ "crossed": 0,
+ "executed_shares": 1119323998,
+ "executions_or_cancels_over": 0,
+ "hidden_trade_shares": 173244448,
+ "live_orders_at_end": 0,
+ "locked": 0,
+ "messages": 368366634,
+ "messages_per_second": 2215118.949219173,
+ "orders_added": 164696353,
+ "seconds": 166.2965477,
+ "unknown_order_references": 0
+}

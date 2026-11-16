@@ -1,0 +1,18 @@
+[package]
+name = "bourse-gateway"
+version = "0.1.0"
+edition = "2021"
+description = "Protocol gateways of the Bourse exchange: OUCH 5.0 and FIX 4.4 order entry, ITCH 5.0 market data"
+license = "MIT"
+
+[dependencies]
+memmap2 = "0.9"
+mio = { version = "1", features = ["net", "os-poll"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[profile.release]
+opt-level = 3
+codegen-units = 1
+lto = true
+debug = false
